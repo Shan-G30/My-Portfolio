@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanmathi G - Aspiring Software Developer</title>
+    <meta name="description" content="Portfolio of Shanmathi G, an aspiring software developer specializing in web development and MERN stack technologies.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+    <div class="container">
+        <a class="navbar-brand fw-bold gradient-text" href="#home">Shanmathi G</a>
+        
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#achievements">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            
+            <button class="btn btn-outline-primary ms-3 theme-toggle" id="themeToggle">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero-section d-flex align-items-center min-vh-100">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8" data-aos="fade-up">
+                <!-- Profile Picture -->
+                <div class="profile-pic mx-auto mb-4">
+                    <div class="profile-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                
+                <h1 class="display-4 fw-bold mb-4">
+                    Hi, I'm <span class="gradient-text">Shanmathi G</span>
+                </h1>
+                
+                <div class="typing-container mb-4">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </div>
+                
+                <p class="lead text-muted mb-5">
+                    Aspiring Software Developer from Namakkal, Tamil Nadu, India.
+                    Passionate about creating innovative solutions and contributing to real-world tech challenges.
+                </p>
+                
+                <div class="hero-buttons mb-5">
+                    <a href="#contact" class="btn btn-primary btn-lg me-3 smooth-scroll">Get In Touch</a>
+                    <button class="btn btn-outline-primary btn-lg" onclick="downloadResume()">
+                        <i class="fas fa-download me-2"></i>Download Resume
+                    </button>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Shan-G30" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/shanmathi-g-020014276/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:gnanavelshanmathi1@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">About Me</h2>
+                <p class="lead text-muted">Get to know more about my journey and aspirations</p>
+            </div>
+        </div>
+        
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                <div class="about-image">
+                    <i class="fas fa-code"></i>
+                </div>
+            </div>
+            
+            <div class="col-lg-6" data-aos="fade-left">
+                <h3 class="h4 fw-semibold mb-4">Enthusiastic Tech Explorer</h3>
+                <p class="text-muted mb-4">
+                    I am a passionate college student pursuing a B.Tech in Information Technology at Sri Shakthi Institute. 
+                    With strong analytical thinking, excellent communication skills, and natural adaptability, I'm driven by 
+                    my love for Web Development and excited to contribute to real-world tech challenges.
+                </p>
+                
+                <div class="info-list mb-4">
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap text-primary me-3"></i>
+                        <span><strong>Education:</strong> B.Tech Information Technology, Sri Shakthi Institute</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                        <span><strong>Location:</strong> Namakkal, Tamil Nadu, India</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-heart text-primary me-3"></i>
+                        <span><strong>Interests:</strong> Web Development, Full Stack Development, UI/UX Design</span>
+                    </div>
+                </div>
+                
+                <div class="strengths-grid">
+                    <div class="strength-item">
+                        <div class="strength-title">Leadership</div>
+                        <div class="strength-subtitle">Key Strength</div>
+                    </div>
+                    <div class="strength-item">
+                        <div class="strength-title">Time Management</div>
+                        <div class="strength-subtitle">Core Skill</div>
+                    </div>
+                    <div class="strength-item">
+                        <div class="strength-title">Teamwork</div>
+                        <div class="strength-subtitle">Natural Ability</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Skills & Technologies</h2>
+                <p class="lead text-muted">Technologies I work with and continuously learning</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-card">
+                    <div class="skill-icon text-warning">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h4 class="skill-title">Frontend</h4>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>HTML/CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>React.js</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-card">
+                    <div class="skill-icon text-success">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h4 class="skill-title">Backend</h4>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Java</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Node.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-card">
+                    <div class="skill-icon text-info">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4 class="skill-title">Database</h4>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>MySQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-info" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>MongoDB</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="skill-card">
+                    <div class="skill-icon text-secondary">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4 class="skill-title">Frameworks</h4>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Bootstrap</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-secondary" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Express.js</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-secondary" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Featured Projects</h2>
+                <p class="lead text-muted">Some of my recent work and contributions</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="PACE in the Classroom" class="img-fluid">
+                    </div>
+                    <div class="project-content">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h4 class="project-title">PACE in the Classroom</h4>
+                            <span class="badge bg-primary">MERN Stack</span>
+                        </div>
+                        <p class="project-description">
+                            An innovative educational platform designed to enhance classroom productivity and engagement through modern web technologies.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-link p-0 me-3">
+                                <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                            </a>
+                            <a href="#" class="btn btn-link p-0">
+                                <i class="fab fa-github me-1"></i>Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Drug Inventory System" class="img-fluid">
+                    </div>
+                    <div class="project-content">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h4 class="project-title">Drug Inventory System</h4>
+                            <span class="badge bg-success">Healthcare</span>
+                        </div>
+                        <p class="project-description">
+                            A comprehensive supply chain tracking system for pharmaceutical inventory management with real-time monitoring capabilities.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-link p-0 me-3">
+                                <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                            </a>
+                            <a href="#" class="btn btn-link p-0">
+                                <i class="fab fa-github me-1"></i>Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Vehicle Tracking System" class="img-fluid">
+                    </div>
+                    <div class="project-content">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h4 class="project-title">Vehicle Tracking System</h4>
+                            <span class="badge bg-primary">MERN Stack</span>
+                        </div>
+                        <p class="project-description">
+                            Real-time vehicle tracking application with GPS integration, route optimization, and live monitoring dashboard.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-link p-0 me-3">
+                                <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                            </a>
+                            <a href="#" class="btn btn-link p-0">
+                                <i class="fab fa-github me-1"></i>Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Achievements Section -->
+<section id="achievements" class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Achievements</h2>
+                <p class="lead text-muted">Recognition and milestones in my journey</p>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="achievement-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="achievement-icon bg-warning">
+                        <i class="fas fa-trophy text-white"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h4 class="achievement-title">Finalist - Smart India Hackathon 2024</h4>
+                        <p class="achievement-description">
+                            Successfully competed among thousands of participants and reached the finals of one of India's biggest hackathons, 
+                            showcasing innovative solutions for real-world problems.
+                        </p>
+                        <span class="badge bg-warning">National Level</span>
+                    </div>
+                </div>
+                
+                <div class="achievement-item" data-aos="fade-left" data-aos-delay="200">
+                    <div class="achievement-icon bg-primary">
+                        <i class="fas fa-globe text-white"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h4 class="achievement-title">Global Nominee - NASA Space App Challenge 2024</h4>
+                        <p class="achievement-description">
+                            Selected as a global nominee for developing innovative space-related solutions in NASA's international hackathon, 
+                            competing with teams from around the world.
+                        </p>
+                        <span class="badge bg-primary">International</span>
+                    </div>
+                </div>
+                
+                <div class="achievement-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="achievement-icon bg-success">
+                        <i class="fas fa-users text-white"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h4 class="achievement-title">Participant - Sri Ramakrishna Women's College Event</h4>
+                        <p class="achievement-description">
+                            Actively participated in technical events and competitions, demonstrating leadership skills and 
+                            collaborative problem-solving abilities in academic environments.
+                        </p>
+                        <span class="badge bg-success">Regional</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Get In Touch</h2>
+                <p class="lead text-muted">Let's discuss opportunities and collaborate on exciting projects</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                <h3 class="h5 fw-semibold mb-4">Contact Information</h3>
+                
+                <div class="contact-info mb-4">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">gnanavelshanmathi1@gmail.com</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Phone</div>
+                            <div class="contact-value">+91 9342899401</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Location</div>
+                            <div class="contact-value">Namakkal, Tamil Nadu, India</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="h6 fw-medium mb-3">Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/Shan-G30" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/shanmathi-g-020014276/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:gnanavelshanmathi1@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6" data-aos="fade-left">
+                <form id="contactForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-lg w-100" id="submitBtn">
+                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="h4 fw-bold gradient-text mb-3">Shanmathi G</div>
+                <p class="text-muted mb-3">Aspiring Software Developer | Building the future with code</p>
+                
+                <div class="social-links mb-4">
+                    <a href="https://github.com/Shan-G30" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/shanmathi-g-020014276/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:gnanavelshanmathi1@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                
+                <hr class="border-secondary">
+                <p class="text-muted mb-0">
+                    &copy; 2024 Shanmathi G. All rights reserved. | Made with 
+                    <i class="fas fa-heart text-danger"></i> and lots of coffee
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button class="btn btn-primary back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS Animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Typed.js -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
